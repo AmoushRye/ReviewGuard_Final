@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome -->
+    <script
+        src="https://kit.fontawesome.com/42a182743f.js"
+        crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/resstyle.css" />
+    <title>Profile</title>
+</head>
+<body>
+    <div class="profile-container">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="/images/logo.png" alt="">
+                </a>
+            </div>
+            <ul>
+                <li><a href="http://127.0.0.1:5000/">Home</a></li>
+                <li><a href="/api/users/aboutLogin">About</a></li>
+                <li><a href="/api/users/profile-page">Profile</a></li>
+                <div class="logoutimage">
+                    <img src="/images/logout.png" alt="">
+                    <li><a href="/api/users/logout">Logout</a></li>
+                </div>
+            </ul>
+        </header>
+        <!-- personal details -->
+        <div class="personal-container">
+            <div class="details-wrapper">
+                <div class="details">
+                    <img src="/images/user.png">
+                    <p>Name: <%=user?.fullname%></p>
+                </div>
+                <div class="details">
+                    <img src="/images/envelope.png">
+                    <p>Email: <%=user?.email%></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="icons-container">
+        <p>
+            <a href="/api/users/update-user"><img src="/images/user.png"></a>
+        </p>
+        <p>
+            <a href="/api/users/update-password"><img src="/images/padlock.png"></a>
+        </p>
+    </div>
+
+    <!-- footer start -->
+    <footer>
+        <div class="main-footer">
+            <img src="/images/logo.png" alt="">
+            <div class="social">
+                <a href="https://www.facebook.com/"><img src="/images/facebook-app-symbol.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="/images/instagram.png" alt=""></a>
+            </div>
+        </div>
+        <hr>
+        <div class="cpyright">
+            © 2024 ReviewGuard|All Right Reserved
+        </div>
+    </footer>
+</body>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <div class="logo">
+            <a href="">
+                <img src="/images/logo.png" alt="">
+            </a>
+        </div>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/api/users/aboutLogin">About</a></li>
+            <div class="logoutimage">
+                <img src="/images/logout.png" alt="">
+                <li><a href="/api/users/logout">Logout</a></li>
+            </div>
+        </ul>
+    </header>
+    <!-- header complete -->
+
+    <form action="/api/users/result" class="mainbody" method="post">
+        <p>Paste a review you want to authenticate</p>
+        <textarea required placeholder="Paste the review" name="text" id="" cols="100" rows="10"></textarea>
+        <button type="submit">Check</button>
+    </form>
+        
+    <!-- footer start -->
+    <footer>
+        <div class="main-footer">
+            <img src="/images/logo.png" alt="">
+            <div class="social">
+                <a href=""><img src="/images/facebook-app-symbol.png" alt=""></a>
+                <a href=""><img src="/images/instagram.png" alt=""></a>
+            </div>
+        </div>
+        <div class="cpyright">
+            © 2024 ReviewGuard|All Right Reserved 
+        </div>
+    </footer>
+</body>
+</html>

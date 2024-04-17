@@ -1,0 +1,274 @@
+:root {
+    --color-light: white;
+    --color-dark: #212121;
+    --color-signal: #fab700;
+    
+    --color-background: var(--color-light);
+    --color-text: var(--color-dark);
+    --color-accent: var(--color-signal);
+    
+    --size-bezel: .5rem;
+    --size-radius: 4px;
+    
+    line-height: 1.4;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.6rem + .4vw);
+    color: var(--color-text);
+    background: var(--color-background);
+    font-weight: 300;
+    padding: 0 calc(var(--size-bezel) * 3);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    justify-content: center;
+}
+.main-container h1{
+    color:rgba(31,163,248) ;
+    margin-bottom: 40px;
+}
+.main-container p{
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+footer{
+    margin-top: 15%;
+}
+.main-container a{
+    font-size: 20px;
+}
+.about-container{
+    height: 40vh;
+    width: 70%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.head1{
+    margin:auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.head1 p{
+    font-size: 3.5rem;
+}
+.head2{
+    width: 50rem;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.head2 p{
+    font-size: 1.5rem;
+}
+.head3{
+    margin-bottom: 15px;
+}
+.button {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border-radius: 4px;
+    background-color: rgba(31,163,248);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 220px;
+    height: 50px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-size: 20px;
+    text-align: center;
+}
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span {
+    padding-right: 25px;
+}
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+.head4 a{
+    text-decoration: none;
+}
+.head4 p{
+    font-size: 1.5rem;
+}
+
+hr{
+    width: 95%;
+    height: 3px;
+    background-color: gray;
+    margin: 0 auto;
+}
+
+.container {
+    text-align: center;
+    margin-top: 20vh;
+    margin-right: 200px;
+    width: 100%;
+}
+.container h1{
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.field-holder{
+    position: relative;
+    margin-bottom: 1.25em;
+}
+input{
+    border: 1px solid #dfdfdf;
+    border-bottom: 3px solid #dfdfdf;
+    outline: none;
+}
+label{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: black;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    opacity: 0.7;
+    margin-left: 10px;
+    transition: 2x ease-in-out;
+}
+input, label{
+    font-size: 1em;
+    width: 100%;
+    height: 55px;
+}
+
+input:focus + label,
+input:valid +label{
+    color:black ;
+    font-size: 1.15em;
+    top: -25px;
+    pointer-events: none;
+    opacity: 1;
+    font-weight: bold;
+}
+input:focus,
+input:valid{
+    border: 1px solid rgba(31,163,248);
+    box-shadow: 0 0 5px rgba(31,163,248);
+}
+
+.registerbtn {
+    background-color: rgba(31,163,248);
+    color: white;
+    padding: 16px 10px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5%;
+    font-size: 1.2em;
+}
+.registerbtn:hover{
+    background-color: #FFFFFF;
+    color: rgba(31,163,248);
+    box-shadow: 0 0 5px rgba(31,163,248);
+    font-weight: 700;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.signin {
+    text-align: center;
+}
+.logo-login{
+    text-align: center;
+}
+
+
+@media (max-width:770px){
+    .about-container p{
+        font-size: 15px;
+        margin-right: 100px;
+        margin-left: 100px;
+    }
+    .head1 p{
+        font-size: 1.5rem;
+    }
+    .about-container div{
+        margin-top: 20px;
+    }
+    .button{
+        font-size: 18px;
+        width: 200px;
+    }
+    .main-footer{
+        margin-top: 0;
+    }
+}
+@media (max-width:580px){
+    .about-container p{
+        font-size: 15px;
+        margin: 0 150px 0 150px;
+    }
+    .head1 p{
+        font-size: 1.5rem;
+        margin: 0 50px;
+    }
+    .button{
+        font-size: 12px;
+        width: 150px;
+        margin-bottom: 0px;
+    }
+    .head4{
+        margin-bottom: 15px;
+    }
+    .head4 p{
+        margin: 0 50px;
+    }
+    .container{
+        margin-right: 100px;
+    }
+}
+@media (max-width:440px){
+    .about-container p{
+        font-size: 9px;
+        margin: 0 150px 0 150px;
+    }
+    .head1 p{
+        font-size: 1rem;
+        margin: 0 50px;
+    }
+    .button{
+        font-size: 8px;
+        width: 120px;
+        margin-bottom: 0px;
+    }
+    .head4{
+        margin-bottom: 15px;
+    }
+    .head4 p{
+        margin: 0 50px;
+    }
+}
